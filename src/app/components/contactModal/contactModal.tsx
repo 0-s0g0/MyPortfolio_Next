@@ -1,10 +1,19 @@
-//モーダルの表示・非表示.tsx
 "use client";
 
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 import styles from "./contactModal.module.css"; // モーダルのスタイル
 
-export default function ContactModal() {
+export default function ContactModalWrapper() {
+    return (
+        <Suspense fallback={null}>
+            <ContactModal />
+        </Suspense>
+    );
+}
+
+function ContactModal() {
     const router = useRouter();
     const searchParams = useSearchParams();
 
@@ -13,7 +22,7 @@ export default function ContactModal() {
 
     // モーダルを閉じる
     const closeModal = () => {
-        router.push("/", { scroll: false }); // `?modal=contact` を削除
+        router.replace("/"); // `router.push` ではなく `replace` を使う
     };
 
     if (!isOpen) return null; // `?modal=contact` じゃないなら何も表示しない
@@ -28,4 +37,3 @@ export default function ContactModal() {
         </div>
     );
 }
- 
