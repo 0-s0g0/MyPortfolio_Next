@@ -1,0 +1,78 @@
+.activeback{
+    border-radius:20px;
+    margin:16px;
+}
+
+.activeback2{
+    display:flex;
+    gap: 12px;
+}
+
+.indexback{
+    display:flex;
+    flex-direction:column;
+    items-align:center;
+    align-items:center;
+    margin:12px;
+}
+
+.ChevronUp{
+    width:36px;
+    height:36px;
+    color:#9ca3af;
+}
+
+.ChevronUp:hover {
+    color: #ffffff;
+}
+
+.indexbox {
+    padding: 12px;
+    width:100%;
+    cursor: pointer;/**マウスカーソルの形を変える*/
+    background-color:rgb(248, 242, 242);
+    border-radius: 8px;
+    margin-top: 8px;
+    transition: background-color 0.1s ease;
+  }
+  
+  .indexbox:hover {
+    background-color:#fff0f5; /* bg-gray-700 */
+  }
+  
+  .selected {
+    background-color: #e1cabba4; /* bg-red-500 */
+  }
+  
+  .deback{
+    display:flex;
+    flex-direction:row;
+    /*grid-column:span 2;*/
+    background-color: #e1cabba4;
+    border-radius:20px;
+    padding:16px;
+  }
+  .imgback{
+    display:flex;
+    flex-direction:column;
+  }
+  .img{
+    width:300px;
+    height:300px;
+  }
+  .title{
+    width:300px;
+  }
+  .date{
+    background:white;
+  }
+  .tag{
+    background:white;
+  }
+
+  .description{
+    width:300px;
+    margin:10px;
+  }
+
+  

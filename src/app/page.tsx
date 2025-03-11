@@ -6,8 +6,8 @@ import Header from "./components/header/header";
 import Aboutme from "./components/aboutme/aboutme";
 import Concept from "./components/concept/concept"
 import Fotter from "./components/footer/footer";
-
 import ProjectShowcase from './components/Products/ProjectShowcase';
+import Activities from './components/Activites/Activities';
 
 export default function Home() {
 
@@ -18,11 +18,14 @@ export default function Home() {
     <div className="flex flex-col justify-center items-center">
       <div id="products" className={styles.contentTitle}>Products</div>
       <ProjectShowcase/>
+
+      <div id="products" className={styles.contentTitle}>Activities</div>
+      <Activities/>
     
-    <div id="about-me" className={styles.contentTitle}>About me</div>
+      <div id="about-me" className={styles.contentTitle}>About me</div>
       <Aboutme/>
 
-    <div id="concept" className={styles.contentTitle}>Concept</div>
+      <div id="concept" className={styles.contentTitle}>Concept</div>
       <Concept/>
 
     </div>
