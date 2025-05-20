@@ -30,6 +30,10 @@ const ProjectDetail1 = () => {
         <table className={pagestyles.table}>
           <tbody>
             <tr className={pagestyles.tableRow}>
+              <th>デプロイ先</th>
+              <td><Link href={project.webURL}>{project.webURL}</Link></td>
+            </tr>
+            <tr className={pagestyles.tableRow}>
               <th>GitHub</th>
               <td><Link href={project.github}>{project.github}</Link></td>
             </tr>

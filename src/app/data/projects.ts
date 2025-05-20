@@ -24,6 +24,7 @@ export interface Project {
     prezentation:string;
     technologies: string[];
     duration: string;
+    webURL: string;
     github: string;
     outname:string;
     outlink?: string;  // 外部リンクはオプショナルにする
@@ -50,6 +51,7 @@ export interface Project {
     duration: "(webアプリの仕組みなどの勉強) 3か月  \n(デザイン・コーディング) 2か月",
     outname:'none',
     outlink:'none',
+    webURL: "https://tamalog.vercel.app/",
 },
 {
     id: 2,
@@ -70,6 +72,7 @@ export interface Project {
     duration: "10日間",
     outname:"topa'z記事",
     outlink:"https://topaz.dev/projects/3d8247708bf924069bec",
+    webURL: 'none',
   },
 
   {
@@ -91,6 +94,7 @@ export interface Project {
     duration: "7日間",
     outname:"技育プロジェクト : サポーターズ公式Xリンク",
     outlink:"https://x.com/geek_pjt/status/1880902623957827945",
+    webURL: 'none',
   },
 
   {
@@ -112,6 +116,7 @@ export interface Project {
     duration: "(2025.01.01～Now)",
     outname:"none",
     outlink:"none",
+    webURL: 'https://0-s0g0.com/',
   },
   {
     id: 5,
@@ -132,6 +137,7 @@ export interface Project {
     duration: "3日間",
     outname:"none",
     outlink:"none",
+    webURL: 'none',
   },
 
   {
@@ -153,6 +159,7 @@ export interface Project {
     duration: "3日間",
     outname:"topa'z記事",
     outlink:"https://topaz.dev/projects/9b22d2a5cfb1ee935405",
+    webURL: 'none',
   },
 
   {
@@ -174,6 +181,7 @@ export interface Project {
     duration: "2時間",
     outname:"none",
     outlink:"none",
+    webURL: 'none',
   },
 
   {
@@ -193,8 +201,9 @@ export interface Project {
     role: "メインPage/BlogPageのデザイン&コーディング",
     prezentation:'none',
     duration: "2025/3/17～随時変更中",
-    outname:"https://stepbycode.work/",
-    outlink:"https://stepbycode.work/",
+    outname:"none",
+    outlink:"none",
+    webURL: 'https://stepbycode.work/',
   },
 
 
