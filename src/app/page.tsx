@@ -18,6 +18,8 @@ export default function Home() {
     <div className="flex flex-col justify-center items-center">
       <div id="products" className={styles.contentTitle}>Products</div>
       <ProjectShowcase/>
+
+      <div id="about-me" className={styles.contentTitle}>Active</div>
     
     <div id="about-me" className={styles.contentTitle}>About me</div>
       <Aboutme/>
