@@ -5,7 +5,6 @@ import { ChevronRight, ExternalLink, ArrowRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 import { newsItems, eventReportItems } from "@/app/data/activities"
-import { NewsItem, EventReportItem } from "@/app/data/activities"
 
 
 
