@@ -15,8 +15,8 @@ const ZenMaru = Zen_Maru_Gothic({
 
 
 export const metadata: Metadata = {
-  title: "あしあと",
-  description: "SogoReiMyPortfolio",
+  title: "SogoRei's Portfolio",
+  description: "MyPortfolio-あしあと",
 };
 
 export default function RootLayout({
@@ -31,7 +31,7 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="あしあと" />
+        <meta name="apple-mobile-web-app-title" content="SogoRei's Coding Products" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
