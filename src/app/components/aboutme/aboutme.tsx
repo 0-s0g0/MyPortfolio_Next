@@ -16,9 +16,15 @@ export default function Aboutme() {
                 <Image src={aboutmeGirl} alt="" className={aboutmestyles.aboutmeimg}></Image>
                 <div  className={aboutmestyles.aboutmetext}>
                     <div className={aboutmestyles.aboutmetextName}>Sogo Rei</div>
-                    <div className={aboutmestyles.aboutmetextSub}>北九州の修士一年生（27卒）</div>
-                    <div className={aboutmestyles.aboutmetextMain}>制御工学を専攻し、医用画像工学を研究テーマにしています。趣味でハッカソンなどに参加してアプリ制作をしています。研究で得た知識を何か形にできないかなと思いはじめました。</div>
-                    <div className={aboutmestyles.aboutmetexttag}>北九州ITコミュニティ <Link href="https://stepbycode.work/" >「StepByCode」</Link>を運営しています。</div>
+                    <div className={aboutmestyles.aboutmetextSub}>九州工業大学の大学院生です（修士1年 / 27卒）</div>
+                    <div className={aboutmestyles.aboutmetextMain}>
+                    大学院では医用画像処理について研究しながら、アイデアをWebサイトやアプリとして形にする面白さに夢中です。
+                    <br />
+                    ご縁をいただいたWeb制作では、一つひとつの出会いを大切に、心を込めてお手伝いさせていただいています。
+                    </div>
+                    <div className={aboutmestyles.aboutmetexttag}>
+                    北九州のITコミュニティ<Link href="https://stepbycode.work/">「StepByCode」</Link>の代表を務めており、皆さんと一緒に学ぶ時間も、私の大切な活動です。
+                    </div>
                     <div className={aboutmestyles.aboutmeicons}>
 
                         <Link href="https://www.instagram.com/0_s0g0" >

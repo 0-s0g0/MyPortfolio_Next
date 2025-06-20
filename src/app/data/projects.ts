@@ -7,6 +7,7 @@ import product5img from "./../Public/images/Dream.png";
 import product6img from "./../Public/images/Tekuteku.png";
 import product7img from "./../Public/images/APU.jpg";
 import product8img from "./../Public/images/stepbycode.png";
+import product9img from "./../Public/images/kitakyudenki.png";
 
 export interface Project {
     id: number;
@@ -204,6 +205,27 @@ export interface Project {
     outname:"none",
     outlink:"none",
     webURL: 'https://stepbycode.work/',
+  },
+  {
+    id: 9,
+    title: "有限会社北九電機HP",
+    description: "有限会社北九電機様公式サイト",
+    description2: "webサイト制作案件",
+    image: product9img,
+    tags: ["Website", "Individual Project", "client work"],
+    technologies: ["cloudflare", "Next.js/TS","CSS"],
+    awardTitle: "none",
+    github: "https://github.com/Yiwashi/kitaQdenkiHP",
+    background: "北九州市の電気工事会社「有限会社北九電機」様の公式サイトを制作。  \n同社の高い技術力と豊富な実績をWebで伝え、新たな顧客層にアプローチするデジタル拠点として開発しました。",
+    purpose: "Webサイトからの新規顧客獲得と、企業の信頼性向上を目的としています。  \n同社の強みである事業内容や技術力を分かりやすく提示し、ビジネスチャンスの創出と問い合わせ増加を目指します。",
+    function: "事業内容、会社概要、採用情報、お問い合わせフォームといった、企業の公式サイトに不可欠な機能を実装。  \n顧客が必要な情報にスムーズにアクセスできるよう設計し、レスポンシブデザインにも対応しています。",
+    number:'1名',
+    role: "すべて",
+    prezentation:'none',
+    duration: "2025/3/38～2025/6/8(公開)",
+    outname:"none",
+    outlink:"none",
+    webURL: 'https://kitakyudenki.vercel.app/',
   },
 
 
