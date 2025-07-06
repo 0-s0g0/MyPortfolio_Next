@@ -3,7 +3,7 @@ import styles from './styles/styles.module.css'
 //components
 import Title from "./components/title/title";
 import Header from "./components/header/header";
-import Activities from "./components/Activites1/Activites";
+import Activities from "../app/events/components/Activites";
 import Aboutme from "./components/aboutme/aboutme";
 import Concept from "./components/concept/concept"
 import Fotter from "./components/footer/footer";
@@ -23,6 +23,8 @@ export default function Home() {
     <div id="about-me" className={styles.contentTitle}>About me</div>
       <Aboutme/>
     
+    <div id="about-me" className={styles.contentTitle}>Activities</div>
+      <Activities/>
 
     <div id="concept" className={styles.contentTitle}>Concept</div>
       <Concept/>
