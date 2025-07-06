@@ -1,80 +1,68 @@
-
-export interface NewsItem {
-  date: string;
-  category: "神奈川情報" | "運合会情報";
-  title: string;
-  url?: string | "none" // URLを追加、"none"または未定義の場合は矢印を表示しない;
+export interface Activities {
+  id: string
+  company: string
+  position: string
+  period: string
+  location: string
+  description: string
+  achievements: string[]
+  technologies: string[]
+  companyUrl?: string
+  icon: "briefcase" | "code" | "rocket" | "building"
+  color: string
 }
 
-export interface EventReportItem {
-  date: string;
-  category: "イベント" | "セミナー" | "ワークショップ";
-  title: string;
-  url?: string | "none" // URLを追加、"none"または未定義の場合は矢印を表示しない;
-}
 
-export const newsItems: NewsItem[] = [
-    {
-      date: "2023.07.25",
-      category: "神奈川情報",
-      title: "アップへ〜 2023年6月分のランキング発表…",
-      url: "/news/2023-07-25-3r-mountain",
-    },
-    {
-      date: "2023.07.21",
-      category: "運合会情報",
-      title: "自由研究にも！小学生向け食品ロス学習「ごちそうさま！チャレンジシート」",
-      url: "https://example.com/food-loss-education",
-    },
-    {
-      date: "2023.07.19",
-      category: "運合会情報",
-      title: "予約登録米で「サステナブル★セレクション2023」二つ星",
-      url: "none", // 矢印を表示しない
-    },
-    {
-      date: "2023.07.18",
-      category: "神奈川情報",
-      title: "書き損じはがきの寄付にご協力ありがとうございました",
-      url: "/news/2023-07-18-postcard-donation",
-    },
-    {
-      date: "2023.07.10",
-      category: "運合会情報",
-      title: "『直火炒めチャーハン』が製法・製造ラインも見直し、さらにバラバラでサステナブルにリニューアル！",
-      // URLなし - 矢印を表示しない
-    },
-  ];
-
-export const eventReportItems: EventReportItem[] = [
-    {
-      date: "2023.08.15",
-      category: "イベント",
-      title: "夏休み親子エコワークショップ開催レポート 〜廃材から作るリサイクルアート〜",
-      url: "/events/2023-08-15-eco-workshop",
-    },
-    {
-      date: "2023.08.05",
-      category: "セミナー",
-      title: "食品ロス削減セミナー「家庭でできるフードロス対策」参加者の声",
-      url: "https://example.com/food-loss-seminar",
-    },
-    {
-      date: "2023.07.28",
-      category: "ワークショップ",
-      title: "地域農業体験ワークショップ「田植えから収穫まで」第一回活動報告",
-      url: "none", // 矢印を表示しない
-    },
-    {
-      date: "2023.07.15",
-      category: "イベント",
-      title: "環境フェスティバル2023 出展報告とアンケート結果のまとめ",
-      url: "/events/2023-07-15-eco-festival",
-    },
-    {
-      date: "2023.07.02",
-      category: "セミナー",
-      title: "サステナブル生活講座「プラスチックフリーな暮らし」実践報告会",
-      // URLなし - 矢印を表示しない
-    },
-  ]
+export const Activitiesdata: Activities[] = [
+  {
+    id: "1",
+    company: "テックイノベーション株式会社",
+    position: "シニアフロントエンドエンジニア",
+    period: "2022年4月 - 現在",
+    location: "東京, 日本",
+    description: "大規模なWebアプリケーションの開発をリードし、ユーザーエクスペリエンスの向上に貢献。",
+    achievements: [
+      "新機能の開発により、ユーザーエンゲージメントを30%向上",
+      "コードレビュープロセスの改善により、バグ発生率を50%削減",
+      "チーム内でのReact/TypeScriptのベストプラクティスを確立",
+    ],
+    technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "GraphQL"],
+    companyUrl: "https://example.com",
+    icon: "code",
+    color: "bg-blue-500",
+  },
+  {
+    id: "2",
+    company: "デジタルソリューションズ",
+    position: "フロントエンドエンジニア",
+    period: "2020年6月 - 2022年3月",
+    location: "大阪, 日本",
+    description: "ECサイトやコーポレートサイトの開発・保守を担当。レスポンシブデザインの実装に特化。",
+    achievements: [
+      "モバイルファーストのアプローチでサイト表示速度を40%改善",
+      "アクセシビリティ対応により、WCAG 2.1 AA準拠を達成",
+      "新人エンジニアのメンタリングを担当",
+    ],
+    technologies: ["Vue.js", "JavaScript", "SCSS", "Webpack", "Firebase"],
+    companyUrl: "https://example.com",
+    icon: "briefcase",
+    color: "bg-green-500",
+  },
+  {
+    id: "3",
+    company: "スタートアップ株式会社",
+    position: "ジュニアエンジニア",
+    period: "2019年4月 - 2020年5月",
+    location: "東京, 日本",
+    description: "スタートアップ環境でフルスタック開発を経験。プロダクトの初期開発から運用まで幅広く担当。",
+    achievements: [
+      "MVP開発を3ヶ月で完了し、プロダクトローンチに貢献",
+      "ユーザーフィードバックを基にした機能改善を継続的に実施",
+      "CI/CDパイプラインの構築により、デプロイ時間を80%短縮",
+    ],
+    technologies: ["React", "Node.js", "MongoDB", "AWS", "Docker"],
+    companyUrl: "https://example.com",
+    icon: "rocket",
+    color: "bg-purple-500",
+  },
+]
