@@ -2,10 +2,10 @@
 
 import { useState } from "react"
 import { Activitiesdata } from "@/app/data/activities"
-import { ActivityCard } from "@/app/components/Activities/component/ActivityCard"
-import { TimelineIcon } from "@/app/components/Activities/component/timeline-icon"
-import { SectionHeader } from "@/app/components/Activities/component/section-header"
-import { TimelineLine } from "@/app/components/Activities/component/timeline-line"
+import { ActivityCard } from "@/app/components/Activities2/component/ActivityCard"
+import { TimelineIcon } from "@/app/components/Activities2/component/timeline-icon"
+import { SectionHeader } from "@/app/components/Activities2/component/section-header"
+import { TimelineLine } from "@/app/components/Activities2/component/timeline-line"
 
 export default function Activities() {
   const [expandedId, setExpandedId] = useState<string | null>(null)

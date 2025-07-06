@@ -1,4 +1,4 @@
-import { getIconColor} from "@/app/components/Activities/utils/icon-utils"
+import { getIconColor} from "@/app/components/Activities2/utils/icon-utils"
 
 interface TimelineIconProps {
   icon: string
