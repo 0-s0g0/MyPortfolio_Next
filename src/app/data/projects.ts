@@ -32,6 +32,7 @@ export interface Project {
     github: string;
     outname:string;
     outlink?: string;  // 外部リンクはオプショナルにする
+    date?:string;
     
   }
 
@@ -56,6 +57,7 @@ export interface Project {
     outname:'none',
     outlink:'none',
     webURL: "https://tamalog.vercel.app/",
+    date:'2024/9~11',
 },
 {
     id: 2,
@@ -77,6 +79,7 @@ export interface Project {
     outname:"topa'z記事",
     outlink:"https://topaz.dev/projects/3d8247708bf924069bec",
     webURL: 'none',
+    date:'2024/12',
   },
 
   {
@@ -99,6 +102,7 @@ export interface Project {
     outname:"技育プロジェクト : サポーターズ公式Xリンク",
     outlink:"https://x.com/geek_pjt/status/1880902623957827945",
     webURL: 'none',
+    date:'2025/01',
   },
 
   {
@@ -121,6 +125,7 @@ export interface Project {
     outname:"none",
     outlink:"none",
     webURL: 'https://0-s0g0.com/',
+    date:'2025/01',
   },
   {
     id: 5,
@@ -142,6 +147,7 @@ export interface Project {
     outname:"none",
     outlink:"none",
     webURL: 'none',
+    date:'2025/02',
   },
 
   {
@@ -164,6 +170,7 @@ export interface Project {
     outname:"topa'z記事",
     outlink:"https://topaz.dev/projects/9b22d2a5cfb1ee935405",
     webURL: 'none',
+    date:'2025/03',
   },
 
   {
@@ -186,6 +193,7 @@ export interface Project {
     outname:"none",
     outlink:"none",
     webURL: 'none',
+    date:'2025/03',
   },
 
   {
@@ -208,6 +216,7 @@ export interface Project {
     outname:"none",
     outlink:"none",
     webURL: 'https://stepbycode.work/',
+    date:'2025/03~',
   },
   {
     id: 9,
@@ -229,6 +238,7 @@ export interface Project {
     outname:"none",
     outlink:"none",
     webURL: 'https://kitakyudenki.vercel.app/',
+    date:'2025/03~06',
   },
   {
     id: 10,
@@ -250,6 +260,7 @@ export interface Project {
     outname:"none",
     outlink:"none",
     webURL: 'https://tsunagu-sep.org/',
+    date:'2025/05~08',
   },
     {
     id: 11,
@@ -270,7 +281,8 @@ export interface Project {
     duration: "2025/8/18～2025/8/28",
     outname:"none",
     outlink:"none",
-    webURL: 'https://tsunagu-sep.org/',
+    webURL: '',
+    date:'2025/08',
   },
     {
     id: 12,
@@ -292,6 +304,7 @@ export interface Project {
     outname:"none",
     outlink:"none",
     webURL: '',
+    date:'2025/09',
   },
 
 

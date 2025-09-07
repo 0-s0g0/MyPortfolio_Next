@@ -96,7 +96,10 @@ const ProjectShowcase = () => {
                   />
                 </div>
                 <div className="p-6">
+                  <div className='flex items-center'>
                   <h3 className="text-2xl font-medium text-amber-800 mb-2">{project.title}</h3>
+                  <p className="px-5 py-1 bg-gray-100 text-stone-600 rounded-full ml-10">{project.date}</p>
+                  </div>
                   <p className="text-stone-600 mb-1">{project.description}</p>
                   <p className="text-stone-600 mb-4">{project.description2}</p>
 
@@ -123,6 +126,7 @@ const ProjectShowcase = () => {
                         </span>
                       ))}
                     </div>
+
                   </div>
                 </div>
               </Link>
