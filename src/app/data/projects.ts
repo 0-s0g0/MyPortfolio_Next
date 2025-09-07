@@ -284,6 +284,7 @@ export interface Project {
     webURL: '',
     date:'2025/08',
   },
+  /*
     {
     id: 12,
     title: "Inventory Management Dashboard",
@@ -305,7 +306,7 @@ export interface Project {
     outlink:"none",
     webURL: '',
     date:'2025/09',
-  },
+  },*/
 
 
 
