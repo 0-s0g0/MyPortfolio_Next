@@ -1,80 +1,165 @@
-
-export interface NewsItem {
-  date: string;
-  category: "神奈川情報" | "運合会情報";
-  title: string;
-  url?: string | "none" // URLを追加、"none"または未定義の場合は矢印を表示しない;
+export interface TimelineItem {
+  id: string
+  icon:   "MonitorSmartphone"| "code" | "building" | "star" | "MonitorCheck" | "award"
+  date: string // MM.DD format
+  title: string
+  description?: string
+  location?: string
+  url?: string
 }
 
-export interface EventReportItem {
-  date: string;
-  category: "イベント" | "セミナー" | "ワークショップ";
-  title: string;
-  url?: string | "none" // URLを追加、"none"または未定義の場合は矢印を表示しない;
+export interface TimelineYear {
+  year: number
+  items: TimelineItem[]
 }
 
-export const newsItems: NewsItem[] = [
-    {
-      date: "2023.07.25",
-      category: "神奈川情報",
-      title: "アップへ〜 2023年6月分のランキング発表…",
-      url: "/news/2023-07-25-3r-mountain",
-    },
-    {
-      date: "2023.07.21",
-      category: "運合会情報",
-      title: "自由研究にも！小学生向け食品ロス学習「ごちそうさま！チャレンジシート」",
-      url: "https://example.com/food-loss-education",
-    },
-    {
-      date: "2023.07.19",
-      category: "運合会情報",
-      title: "予約登録米で「サステナブル★セレクション2023」二つ星",
-      url: "none", // 矢印を表示しない
-    },
-    {
-      date: "2023.07.18",
-      category: "神奈川情報",
-      title: "書き損じはがきの寄付にご協力ありがとうございました",
-      url: "/news/2023-07-18-postcard-donation",
-    },
-    {
-      date: "2023.07.10",
-      category: "運合会情報",
-      title: "『直火炒めチャーハン』が製法・製造ラインも見直し、さらにバラバラでサステナブルにリニューアル！",
-      // URLなし - 矢印を表示しない
-    },
-  ];
+export const timelineData: TimelineYear[] = [
+  {
+    year: 2025,
+    items: [
 
-export const eventReportItems: EventReportItem[] = [
-    {
-      date: "2023.08.15",
-      category: "イベント",
-      title: "夏休み親子エコワークショップ開催レポート 〜廃材から作るリサイクルアート〜",
-      url: "/events/2023-08-15-eco-workshop",
-    },
-    {
-      date: "2023.08.05",
-      category: "セミナー",
-      title: "食品ロス削減セミナー「家庭でできるフードロス対策」参加者の声",
-      url: "https://example.com/food-loss-seminar",
-    },
-    {
-      date: "2023.07.28",
-      category: "ワークショップ",
-      title: "地域農業体験ワークショップ「田植えから収穫まで」第一回活動報告",
-      url: "none", // 矢印を表示しない
-    },
-    {
-      date: "2023.07.15",
-      category: "イベント",
-      title: "環境フェスティバル2023 出展報告とアンケート結果のまとめ",
-      url: "/events/2023-07-15-eco-festival",
-    },
-    {
-      date: "2023.07.02",
-      category: "セミナー",
-      title: "サステナブル生活講座「プラスチックフリーな暮らし」実践報告会",
-      // URLなし - 矢印を表示しない
-    },
-  ]
+            {
+        id: "14",
+        icon: "building",
+        date: "08",
+        title: "株式会社CARTAHOLDINGSサマーインターン「Treasure」参加",
+        description: "3weeksフルサイクル開発,開発物",
+        url: "https://tsunagu-sep.org/",
+      },
+                  {
+        id: "13",
+        icon: "MonitorSmartphone",
+        date: "08",
+        title: "一般社団法人TSUNAGU様サイト制作",
+        description: "HP公開中",
+        url: "https://tsunagu-sep.org/",
+      },
+            {
+        id: "12",
+        icon: "building",
+        date: "06",
+        title: "Raizap株式会社インターン参加",
+        description: "RubyonrailsAPIバックエンド開発",
+      },
+            {
+        id: "11",
+        icon: "MonitorSmartphone",
+        date: "06",
+        title: "有限会社北九電機様サイト制作",
+        description: "HP公開中",
+        url: "https://kitakyudenki.vercel.app/",
+        
+      },
+       {
+        id: "10",
+        icon: "building",
+        date: "06",
+        title: "Fixstarts株式会社インターン参加",
+        description: "POC作成",
+      },
+      {
+        id: "9",
+        icon: "star",
+        date: "04",
+        title: "九州工業大学 大学院工学府 入学",
+      },
+
+       {
+        id: "8",
+        icon: "award",
+        date: "03",
+        title: "電子情報通信学会九州支部 成績優秀賞を受賞",
+        description: "電子情報通信学会九州支部2024年度受賞者一覧",
+        url: "https://www.ieice.org/kyushu/siseki2024/",
+
+      },
+     {
+        id: "7",
+        icon: "award",
+        date: "03",
+        title: "九州工業大学 学業最優秀成績賞を受賞",
+
+      },
+      {
+        id: "6",
+        icon: "MonitorSmartphone",
+        date: "03",
+        title: "STEPBYCODEサイト制作",
+        description: "HP公開中",
+        url: "https://kitakyudenki.vercel.app/",
+      },
+      {
+        id: "5",
+        icon: "award",
+        date: "03",
+        title: "APU×九工大ミニハッカソンで金賞を受賞",
+        description: "受賞プロダクト：Nonverbal",
+        url: "https://0-s0g0.com/productpages/7",
+        location: "アジア太平洋大学/大分",
+      },
+      {
+        id: "4",
+        icon: "award",
+        date: "03",
+        title: "Kyutech×ScienceTokyoハッカソンでpixiv賞を受賞",
+        description: "受賞プロダクト：TECHTECH",
+        url: "https://0-s0g0.com/productpages/6",
+        location: "東京科学大学/東京",
+      },
+      {
+        id: "3",
+        icon: "award",
+        date: "02",
+        title: "PRTIMES2025winterHackathonで個人最優秀賞を受賞",
+        description: "受賞プロダクト：DreamShare",
+        url: "https://0-s0g0.com/productpages/5",
+        location: "PRTIMES本社/東京",
+      },
+      {
+        id: "2",
+        icon: "MonitorCheck",
+        date: "02",
+        title: "StartupWeekend北九州に参加",
+
+      },
+      {
+        id: "1",
+        icon: "award",
+        date: "01",
+        title: "技育Campで努力賞を受賞",
+        description: "受賞プロダクト：ThanksLink",
+        url: "https://0-s0g0.com/productpages/3",
+      },
+    ],
+  },
+  {
+    year: 2024,
+    items: [
+
+      {
+        id: "3",
+        icon: "award",
+        date: "12",
+        title: "ハックツハッカソンでProgate賞を受賞",
+        description: "受賞プロダクト：市か区",
+        url: "https://0-s0g0.com/productpages/2",
+      },
+      {
+        id: "2",
+        icon: "award",
+        date: "11",
+        title: "KCL☆HAck2024で金賞受賞",
+        description: "受賞プロダクト：たまlog",
+        url: "https://0-s0g0.com/productpages/1",
+        location: "九州工業大学",
+      },
+      {
+        id: "1",
+        icon: "MonitorCheck",
+        date: "08",
+        title: "国際ロボット開発PBLに参加",
+        location: "国立台北科技大学/台湾",
+      },
+    ],
+  },
+]
