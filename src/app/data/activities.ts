@@ -23,8 +23,8 @@ export const timelineData: TimelineYear[] = [
         icon: "building",
         date: "08",
         title: "株式会社CARTAHOLDINGSサマーインターン「Treasure」参加",
-        description: "3weeksフルサイクル開発,開発物",
-        url: "https://tsunagu-sep.org/",
+        description: "3weeksフルサイクル開発",
+        url: "https://0-s0g0.com/productpages/11",
       },
                   {
         id: "13",
