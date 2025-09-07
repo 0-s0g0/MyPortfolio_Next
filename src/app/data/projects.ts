@@ -10,6 +10,7 @@ import product8img from "./../Public/images/stepbycode.png";
 import product9img from "./../Public/images/kitakyudenki.png";
 import product10img from "./../Public/images/TSUNAGU.png"
 import product11img from "./../Public/images/INTERN1.png"
+import product12img from "./../Public/images/INTERN2.png"
 
 export interface Project {
     id: number;
@@ -254,7 +255,7 @@ export interface Project {
     id: 11,
     title: "ここみて",
     description: "サマーインターンTreasureチームプロダクト",
-    description2: "webサイト制作案件",
+    description2: "課題解決実践プログラム",
     image: product11img,
     tags: ["Web App", "Team Project"],
     technologies: ["React Hono/TS","CSS","Supabase","docker"],
@@ -270,6 +271,27 @@ export interface Project {
     outname:"none",
     outlink:"none",
     webURL: 'https://tsunagu-sep.org/',
+  },
+    {
+    id: 12,
+    title: "Inventory Management Dashboard",
+    description: "サマーインターン個人プロダクト",
+    description2: "ダッシュボード制作",
+    image: product12img,
+    tags: ["Web App", "Team Project"],
+    technologies: ["Next,js/TS","CSS","WeatherAPI"],
+    awardTitle: "none",
+    github: "非公開",
+    background: "5daysサマーインターンにて制作。 ",
+    purpose: "",
+    function: "非公開",
+    number:'1名',
+    role: "データベースはcsv,weatherAPIとデータベースから在庫管理の最適化を行なった",
+    prezentation:'2025/9/5',
+    duration: "2025/9/1～2025/9/5",
+    outname:"none",
+    outlink:"none",
+    webURL: '',
   },
 
 
