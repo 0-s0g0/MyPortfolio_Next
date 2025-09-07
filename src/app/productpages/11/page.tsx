@@ -7,9 +7,9 @@ import Fotter from "@/app/components/footer/footer";
 import ReactMarkdown from 'react-markdown';
 
 // id: 1 のプロジェクトデータを取得
-const project: Project | undefined = projects.find(p => p.id === 9);
+const project: Project | undefined = projects.find(p => p.id === 11);
 
-const ProjectDetail9 = () => {
+const ProjectDetail11 = () => {
   if (!project) {
     return <div>Project not found!</div>;
   }
@@ -30,10 +30,6 @@ const ProjectDetail9 = () => {
         <table className={pagestyles.table}>
           <tbody>
             <tr className={pagestyles.tableRow}>
-              <th>HPリンク</th>
-              <td><Link href={project.webURL}>{project.webURL}</Link></td>
-            </tr>
-            <tr className={pagestyles.tableRow}>
               <th>GitHub</th>
               <td><Link href={project.github}>{project.github}</Link></td>
             </tr>
@@ -41,7 +37,10 @@ const ProjectDetail9 = () => {
               <th>背景</th>
               <td> <ReactMarkdown>{project.background}</ReactMarkdown></td>
             </tr>
-
+            <tr className={pagestyles.tableRow}>
+              <th>目的</th>
+              <td> <ReactMarkdown>{project.purpose}</ReactMarkdown></td>
+            </tr>
             <tr className={pagestyles.tableRow}>
               <th>機能</th>
               <td> <ReactMarkdown>{project.function}</ReactMarkdown></td>
@@ -83,4 +82,4 @@ const ProjectDetail9 = () => {
   );
 };
 
-export default ProjectDetail9;
+export default ProjectDetail11;
