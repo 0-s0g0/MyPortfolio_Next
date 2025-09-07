@@ -7,9 +7,9 @@ import Fotter from "@/app/components/footer/footer";
 import ReactMarkdown from 'react-markdown';
 
 // id: 1 のプロジェクトデータを取得
-const project: Project | undefined = projects.find(p => p.id === 9);
+const project: Project | undefined = projects.find(p => p.id === 10);
 
-const ProjectDetail9 = () => {
+const ProjectDetail10 = () => {
   if (!project) {
     return <div>Project not found!</div>;
   }
@@ -41,7 +41,6 @@ const ProjectDetail9 = () => {
               <th>背景</th>
               <td> <ReactMarkdown>{project.background}</ReactMarkdown></td>
             </tr>
-
             <tr className={pagestyles.tableRow}>
               <th>機能</th>
               <td> <ReactMarkdown>{project.function}</ReactMarkdown></td>
@@ -83,4 +82,4 @@ const ProjectDetail9 = () => {
   );
 };
 
-export default ProjectDetail9;
+export default ProjectDetail10;
