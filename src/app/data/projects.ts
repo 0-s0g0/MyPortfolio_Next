@@ -10,7 +10,7 @@ import product8img from "./../Public/images/stepbycode.png";
 import product9img from "./../Public/images/kitakyudenki.png";
 import product10img from "./../Public/images/TSUNAGU.png"
 import product11img from "./../Public/images/INTERN1.png"
-import product12img from "./../Public/images/INTERN2.png"
+//import product12img from "./../Public/images/INTERN2.png"
 
 export interface Project {
     id: number;
