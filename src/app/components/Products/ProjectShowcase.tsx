@@ -76,7 +76,10 @@ const ProjectShowcase = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 m-8">
         <AnimatePresence>
-          {filteredProjects.map(project => (
+          {filteredProjects
+            .slice() 
+            .sort((a, b) => b.id - a.id) 
+            .map(project => (
             <motion.div
               key={project.id}
               className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
@@ -96,7 +99,10 @@ const ProjectShowcase = () => {
                   />
                 </div>
                 <div className="p-6">
+                  <div className='flex items-center'>
                   <h3 className="text-2xl font-medium text-amber-800 mb-2">{project.title}</h3>
+                  <p className="px-5 py-1 bg-gray-100 text-stone-600 rounded-full ml-10">{project.date}</p>
+                  </div>
                   <p className="text-stone-600 mb-1">{project.description}</p>
                   <p className="text-stone-600 mb-4">{project.description2}</p>
 
@@ -123,6 +129,7 @@ const ProjectShowcase = () => {
                         </span>
                       ))}
                     </div>
+
                   </div>
                 </div>
               </Link>
