@@ -76,7 +76,10 @@ const ProjectShowcase = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 m-8">
         <AnimatePresence>
-          {filteredProjects.map(project => (
+          {filteredProjects
+            .slice() 
+            .sort((a, b) => b.id - a.id) 
+            .map(project => (
             <motion.div
               key={project.id}
               className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
