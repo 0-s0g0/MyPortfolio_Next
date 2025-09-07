@@ -70,7 +70,6 @@ function TimelineItemComponent({ item, isLast }: { item: TimelineItem; isLast: b
 }
 
 export function Timeline({ data }: TimelineProps) {
-  const totalItems = data.reduce((sum, yearData) => sum + yearData.items.length, 0)
 
   return (
     <div className="max-w-2xl mx-auto p-6">
