@@ -7,6 +7,7 @@ import aboutmestyles from './aboutme.module.css'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGithub, faInstagram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { ExternalLink } from "lucide-react"
 
 export default function Aboutme() {
 
@@ -16,7 +17,7 @@ export default function Aboutme() {
                 <Image src={aboutmeGirl} alt="" className={aboutmestyles.aboutmeimg}></Image>
                 <div  className={aboutmestyles.aboutmetext}>
                     <div className={aboutmestyles.aboutmetextName}>Sogo Rei</div>
-                    <div className={aboutmestyles.aboutmetextSub}>九州工業大学の大学院生です（修士1年 / 27卒）</div>
+                    <div className={aboutmestyles.aboutmetextSub}>Kyutechの大学院生です（修士1年 / 27卒）</div>
                     <div className={aboutmestyles.aboutmetextMain}>
                     大学院では医用画像処理について研究しながら、アイデアをWebサイトやアプリとして形にする面白さに夢中です。
                     <br />
@@ -24,6 +25,15 @@ export default function Aboutme() {
                     </div>
                     <div className={aboutmestyles.aboutmetexttag}>
                     北九州のITコミュニティ<Link href="https://stepbycode.work/">「StepByCode」</Link>の代表を務めており、皆さんと一緒に学ぶ時間も、私の大切な活動です。
+                    </div>
+                    <div className="flex my-2">
+                        直近の活動まとめ
+                        <a
+                            href={'./Activites'}
+                            className="flex-shrink-0 transition-colors"
+                        >
+                            <ExternalLink className="w-5 h-5 ml-2" />
+                        </a>
                     </div>
                     <div className={aboutmestyles.aboutmeicons}>
 

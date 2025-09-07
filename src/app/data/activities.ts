@@ -17,12 +17,19 @@ export const timelineData: TimelineYear[] = [
   {
     year: 2025,
     items: [
-
+                    {
+        id: "15",
+        icon: "building",
+        date: "08",
+        title: "I様サマーインターン参加",
+        description: "3weeksフルサイクル開発",
+        url: "https://0-s0g0.com/productpages/11",
+      },
             {
         id: "14",
         icon: "building",
         date: "08",
-        title: "株式会社CARTAHOLDINGSサマーインターン「Treasure」参加",
+        title: "株式会社CARTAHOLDINGS様サマーインターン「Treasure」参加",
         description: "3weeksフルサイクル開発",
         url: "https://0-s0g0.com/productpages/11",
       },
@@ -38,7 +45,7 @@ export const timelineData: TimelineYear[] = [
         id: "12",
         icon: "building",
         date: "06",
-        title: "Raizap株式会社インターン参加",
+        title: "Rグループ株式会社様インターン参加",
         description: "RubyonrailsAPIバックエンド開発",
       },
             {
@@ -54,15 +61,10 @@ export const timelineData: TimelineYear[] = [
         id: "10",
         icon: "building",
         date: "06",
-        title: "Fixstarts株式会社インターン参加",
-        description: "POC作成",
+        title: "株式会社F様インターン参加",
+        description: "最適化アルゴリズムの構築とPOC作成,",
       },
-      {
-        id: "9",
-        icon: "star",
-        date: "04",
-        title: "九州工業大学 大学院工学府 入学",
-      },
+
 
        {
         id: "8",
@@ -77,7 +79,7 @@ export const timelineData: TimelineYear[] = [
         id: "7",
         icon: "award",
         date: "03",
-        title: "九州工業大学 学業最優秀成績賞を受賞",
+        title: "学業成績最優秀賞を受賞",
 
       },
       {
@@ -92,7 +94,7 @@ export const timelineData: TimelineYear[] = [
         id: "5",
         icon: "award",
         date: "03",
-        title: "APU×九工大ミニハッカソンで金賞を受賞",
+        title: "APU×Kyutechミニハッカソンで金賞を受賞",
         description: "受賞プロダクト：Nonverbal",
         url: "https://0-s0g0.com/productpages/7",
         location: "アジア太平洋大学/大分",
