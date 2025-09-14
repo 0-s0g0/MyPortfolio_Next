@@ -39,7 +39,7 @@ export const timelineData: TimelineYear[] = [
         date: "09",
         title: "Iグループ様サマーインターン参加",
         description: "5days個人開発",
-      },,
+      },
             {
         id: "14",
         icon: "building",
