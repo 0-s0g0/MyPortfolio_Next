@@ -17,14 +17,29 @@ export const timelineData: TimelineYear[] = [
   {
     year: 2025,
     items: [
-                    {
-        id: "15",
-        icon: "building",
-        date: "08",
-        title: "I様サマーインターン参加",
-        description: "3weeksフルサイクル開発",
-        url: "https://0-s0g0.com/productpages/11",
+      {
+        id: "18",
+        icon: "award",
+        date: "09",
+        title: "技育博で株式会社CARTAHOLDINGS賞受賞",
+        description: "受賞プロダクト：たまlog",
+        url: "https://0-s0g0.com/productpages/1",
+        location: "虎ノ門ヒルズステーションタワー/東京",
       },
+      {
+        id: "17",
+        icon: "building",
+        date: "09",
+        title: "SmartHR様サマーインターン参加",
+        description: "4daysチーム開発",
+      },
+      {
+        id: "16",
+        icon: "building",
+        date: "09",
+        title: "Iグループ様サマーインターン参加",
+        description: "5days個人開発",
+      },,
             {
         id: "14",
         icon: "building",
