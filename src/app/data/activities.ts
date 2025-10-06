@@ -22,8 +22,8 @@ export const timelineData: TimelineYear[] = [
         icon: "award",
         date: "09",
         title: "JunctionXKyutechでSecondPrize賞受賞",
-        description: "受賞プロダクト：BreathVizzAI",
-        url: "https://0-s0g0.com/productpages/1",
+        description: "受賞プロダクト：BreathVizAI",
+        url: "https://0-s0g0.com/productpages/13",
       },
       {
         id: "19",
