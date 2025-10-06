@@ -69,11 +69,32 @@
     border-radius: 20%;
 }
 
+@media (prefers-color-scheme: dark) {
+    .footercircle {
+        background: #744040; ;  
+    }
+    .footerrectangle{
+        background-color: #744040; ;  
+    }
+    .icon{
+        background-color: #636363; ; 
+    }
+    .footermainText{
+        color: #ffffff;
+    }
+    .footerSubtext{
+        color: #ffffff;
+    }
+    .icon{
+    background:white;
+    color:#636363; 
+}
+}
+
 
 @media (max-width: 670px) {
     .footercircle {
         height:150px;
-        background: #e1cabba4;/*#e1cabba4*/
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
         padding-left:30px;

@@ -11,6 +11,9 @@ import product9img from "./../Public/images/kitakyudenki.png";
 import product10img from "./../Public/images/TSUNAGU.png"
 import product11img from "./../Public/images/INTERN1.png"
 //import product12img from "./../Public/images/INTERN2.png"
+import product12img from "./../Public/images/CatchUP.png"
+import product13img from "./../Public/images/BreathVizAI.png"
+
 
 export interface Project {
     id: number;
@@ -19,7 +22,7 @@ export interface Project {
     description2: string;
     image:StaticImageData;
     tags: string[];
-    awardTitle:string;
+    awardTitle:string[];
     background: string;
     purpose: string;
     function: string;
@@ -44,8 +47,8 @@ export interface Project {
     description2: "かわいく楽ちん体組成計管理アプリ",
     image: product1img,
     tags: ["Web App", "Individual Project","Award"],
-    technologies: ["Next.js/TS", "JavaScript", "CSS", "Python/Flask"],
-    awardTitle: "KCL☆Hack (2024/11) 金賞",
+    technologies: ["Next.js/TS", "JavaScript", "docker","CSS", "Python/Flask"],
+    awardTitle: ["KCL☆Hack (2024/11) 金賞&技育博vol4(2025/09)企業賞"],
     github: "https://github.com/0-s0g0/KCLHack",
     background :"痩せたいけど、毎回手入力するのはめんどくさい。  \n大学にある体組成計の記録用紙を自動入力かつキャラクター要素で継続を！",
     purpose:"webアプリを初めて作ってみる。画像処理を取り入れてみたい。  \n大学にある体組成計の記録用紙をデジタル化してみる",
@@ -67,7 +70,7 @@ export interface Project {
     image: product2img,
     tags: ["Web App", "Team Project","Award"],
     technologies: ["Next.js/TS", "WebRTC", "CSS", "Python/Flask"],
-    awardTitle: "ハックツハッカソン(2024/12)企業賞",
+    awardTitle: ["ハックツハッカソン(2024/12)企業賞"],
     github: "https://github.com/jangwoung/GAKUSAI-AnkyloCup",
     background :"ハッカソンお題「しかく」から「市か区」を連想。観光と言ったら写真！  \nその写真を活用して観光大臣になり旅をより一層楽しめるようにしたい！",
     purpose:"はじめてのチーム開発。深層学習を取り入れてみたい!  \ngeminiApiを使ったAI文章を作成してみたい!",
@@ -90,7 +93,7 @@ export interface Project {
     image: product3img,
     tags: ["Web App", "Team Project","Award"],
     technologies: ["Next.js/TS", "master.js", "CSS","SQL"],
-    awardTitle: "技育camp(2025/01)努力賞",
+    awardTitle: ["技育camp(2025/01)努力賞"],
     github: "https://github.com/0-s0g0/thankyou-app",
     background :"「うれしい」を共有したい！この気持ちを忘れたくない！  \nそんな気持ちをいつでもどこでも共有できるアプリを作りたい",
     purpose:"SQLデータベースの勉強がしたい  \n物理演算を用いるフレームワークに挑戦してみたい",
@@ -111,7 +114,7 @@ export interface Project {
     description: "ポートフォリオサイト",
     description2: "手がけたアイデアが形になった宝物たち。",
     image: product4img,
-    awardTitle: "none",
+    awardTitle:[ "none"],
     tags: ["Website", "Individual Project"],
     technologies: ["Next.js/TS", "HTML", "CSS", "jQuery"],
     github: "https://github.com/0-s0g0/MyPortfolio_Next",
@@ -133,7 +136,7 @@ export interface Project {
     description: "夢を共有する場所へ",
     description2: "学生と企業が夢でつながるマッチングアプリ",
     image: product5img,
-    awardTitle: "none",
+    awardTitle: ["none"],
     tags: ["Web App", "Team Project"],
     technologies: ["Next.js/TS", "CSS", "Go"],
     github: "https://github.com/0-s0g0/DopingRamune",
@@ -158,7 +161,7 @@ export interface Project {
     image: product6img,
     tags: ["Web App", "Team Project","Award"],
     technologies: ["Next.js/TS", "WebRTC", "CSS", "Go", "HCL"],
-    awardTitle: "Kyutech×ScienceTokyoハッカソン(2025/03)企業賞",
+    awardTitle: ["Kyutech×ScienceTokyoハッカソン(2025/03)企業賞"],
     github: "https://github.com/0-s0g0/TEKUTEKU",
     background :"東京科学大と九州工業大の交流を促進  \n両大学のワーキングスペースでリアルタイムでの交流を目指す",
     purpose:"野良チーム開発。イメージにそったUIのデザインと実装を  \バックと繋げる工程にチャレンジしたい",
@@ -181,7 +184,7 @@ export interface Project {
     image: product7img,
     tags: ["Web App", "Team Project","Award"],
     technologies: ["Bolt.diy", "Next.js/TS"],
-    awardTitle: "APU×九工大ミニハッカソン(2025/03)金賞",
+    awardTitle: ["APU×九工大ミニハッカソン(2025/03)金賞"],
     github: "https://github.com/0-s0g0/APUminiHack",
     background :"交流に関連したアプリを生成AI[bolt.diy]を使って生成  \ninputを'言葉'ではなく'絵'で挑戦",
     purpose:"アイデア勝負。プロンプト作成と発表方法の工夫を",
@@ -204,7 +207,7 @@ export interface Project {
     image: product8img,
     tags: ["Website", "Team Project"],
     technologies: ["cloudflare", "Next.js/TS","CSS"],
-    awardTitle: "none",
+    awardTitle: ["none"],
     github: "https://github.com/StepByCode/HP",
     background :"現在運営中のITコミュニティのHPをデザイン&コーディング  \n運営メンバーでインフラ・別ページ作成などで分担を",
     purpose:"フルレスポンシブ対応をさせたい、活動中なのが分かるようにブログ形式にしたい",
@@ -226,7 +229,7 @@ export interface Project {
     image: product9img,
     tags: ["Website", "Individual Project", "client work"],
     technologies: ["cloudflare", "Next.js/TS","CSS"],
-    awardTitle: "none",
+    awardTitle: ["none"],
     github: "https://github.com/Yiwashi/kitaQdenkiHP",
     background: "北九州市の電気工事会社「有限会社北九電機」様の公式サイトを制作。  \n高い技術力と豊富な実績をWebで伝え、新たな顧客層にアプローチするデジタル拠点として開発しました。",
     purpose: "。  \n事業内容や技術力を分かりやすく提示し、ビジネスチャンスの創出と問い合わせ増加を目指します。",
@@ -248,7 +251,7 @@ export interface Project {
     image: product10img,
     tags: ["Website", "Individual Project", "client work"],
     technologies: ["cloudflare", "Next.js/TS","CSS"],
-    awardTitle: "none",
+    awardTitle: ["none"],
     github: "非公開",
     background: "一般社団法人TSUNAGU様の公式サイトを制作。  \n真っ白なキャンパスからたくさんの色になれるという想いを再現しました。",
     purpose: "",
@@ -270,10 +273,10 @@ export interface Project {
     image: product11img,
     tags: ["Web App", "Team Project"],
     technologies: ["React Hono/TS","CSS","Supabase","docker"],
-    awardTitle: "none",
+    awardTitle: ["none"],
     github: "非公開",
-    background: "CartaHoldingsサマーインターンTreasureにて制作。  \n「技術力評価会を技術で改善する」をテーマに。",
-    purpose: "プロダクトのが与える価値とは何か。チームで全力でぶつかって、このプロダクトを制作しました。  \n全画面ダークモード対応",
+    background: "CartaHoldings様サマーインターンTreasureにて制作。  \n「技術力評価会を技術で改善する」をテーマに。",
+    purpose: "プロダクトのが与える価値とは何か。チームで全力でぶつかって、このプロダクトを制作しました。",
     function: "非公開",
     number:'4名',
     role: "フルサイクル開発を目標に、画面ごとに担当を分け、ペアプログラミングを行ないました。",
@@ -307,6 +310,51 @@ export interface Project {
     webURL: '',
     date:'2025/09',
   },*/
+      {
+    id: 12,
+    title: "CatchUP",
+    description: "サマーインターンSmartHR様チームプロダクト",
+    description2: "最適なキャリアマッチングを",
+    image: product12img,
+    tags: ["Web App", "Team Project"],
+    technologies: ["React/TS","CSS","docker"],
+    awardTitle: ["none"],
+    github: "非公開",
+    background: "SmartHR様サマーインターンにて制作。  \n「最適なキャリアマッチングを⽬指す」をテーマに。",
+    purpose: "4日間の中でユーザーヒアリングとSmartHR Design Systemに基づく快適なユーザー体験の実現を目指しました。",
+    function: "非公開",
+    number:'5名',
+    role: "2名でフロントエンドを担当し、社員サイドの画面を実装した",
+    prezentation:'2025/9/12',
+    duration: "2025/9/9～2025/9/12",
+    outname:"none",
+    outlink:"none",
+    webURL: '',
+    date:'2025/09',
+  },
+    {
+    id: 13,
+    title: "BreathVizAI",
+    description: "Give your ears the eyes of AI.",
+    description2: "呼吸音自動分類アプリ",
+    image: product13img,
+    tags: ["Web App", "Team Project"],
+    technologies: ["Next.js/TS", "Vercel", "docker","CSS", "Python/Pytorch","FastAPI","GCP"],
+    awardTitle: ["JunctionX kyutech(2025/09)Second Prize"],
+    github: "非公開",
+    background :"研究の実用化をしてみたい。論文だけで終わらせない私たちの技術が届くように",
+    purpose:"呼吸器音の自動分類の研究を実用化する",
+    function:"呼吸音の録音  \n音声を画像化しカスタムAIへ  \n最終結果の表示とクイズ機能 ",
+    number:'2名',
+    role: "フロント画面作成",
+    prezentation:'2025/9/28',
+    duration: "2025/9/26～2025/9/28",
+    outname:"JunctionX Kyutech公式Xリンク ",
+    outlink:"https://x.com/junctionx_9tech/status/1972298497367093725",
+    webURL: 'https://breathviz-ai.vercel.app/',
+    date:'2025/09',
+  },
+
 
 
 

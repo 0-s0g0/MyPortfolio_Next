@@ -7,8 +7,8 @@ import headertyles from './headerstyles.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-import logo2 from './../../Public/images/logo2.png'
-
+import logo3 from './../../Public/images/logo3.png'
+import logo4 from './../../Public/images/logo4.png'
 export default function Header() {
     const router = useRouter();
     const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +25,10 @@ export default function Header() {
     return (
         <div className={headertyles.header}>
             <div className={headertyles.logo}>
-                <Image src={logo2} alt="" className={headertyles.logoimg}>
+                <Image src={logo3} alt="" className={headertyles.logoimg}>
+            </Image></div>
+            <div className={headertyles.logo2}>
+                <Image src={logo4} alt="" className={headertyles.logoimg}>
             </Image></div>
 
             {/* ハンバーガーメニューのアイコン */}

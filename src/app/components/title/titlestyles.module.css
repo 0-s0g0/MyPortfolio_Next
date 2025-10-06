@@ -1,4 +1,6 @@
 /* Title Styles */
+
+
 .title {
     display: flex;
     align-items: center;
@@ -7,9 +9,11 @@
     background-size:cover; 
     width: 100%;
     height: 600px;
-    background-color: #e1cabba4;
+    background-color:#e1cabba4;
 
 }
+
+
 
 
 .titleTexth1 {
@@ -18,6 +22,7 @@
     text-align: center;
     margin-bottom: 0;
 }
+
 .titleTexth4 {
     margin-top: 0;
     width: 500px;
@@ -25,11 +30,37 @@
     text-align: center;
 }
 
+
+
 .titleimg {
     background-color: #ffffff50;
     border-radius: 50%;
     height: 250px;
     width:  250px;
+}
+
+/* デフォルト（ライトモード）の色 */
+.svgwavefill {
+    fill: #e1cabba4;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .title {
+        background-color: #744040; 
+    }
+    .titleTexth1 {
+        color: rgb(255, 255, 255);
+    }
+    .titleTexth4 {
+        color: rgb(255, 255, 255);
+    }
+     .titleimg {
+        background-color: #bb9797; /* ダークモードの色 */
+    }
+    .svgwavefill {
+        fill: #744040; ;  
+    }
 }
 
 

@@ -15,12 +15,12 @@ const iconMap = {
 }
 
 const iconColorMap = {
-  MonitorSmartphone: "bg-pink-100 text-pink-600",
-  code: "bg-blue-100 text-blue-600",
-  building: "bg-green-100 text-green-600",
-  star: "bg-purple-100 text-purple-600",
-  MonitorCheck: "bg-teal-100 text-teal-600",
-  award: "bg-yellow-100 text-yellow-600",
+  MonitorSmartphone: "bg-pink-100 text-pink-600 dark:bg-pink-900 dark:text-pink-100",
+  code: "bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-100",
+  building: "bg-green-100 text-green-600 dark:bg-green-900 dark:text-green-100",
+  star: "bg-purple-100 text-purple-600 dark:bg-purple-900 dark:text-purple-100",
+  MonitorCheck: "bg-teal-100 text-teal-600 dark:bg-teal-900 dark:text-teal-100",
+  award: "bg-yellow-100 text-yellow-600 dark:bg-yellow-900 dark:text-yellow-100",
 }
 
 function TimelineItemComponent({ item, isLast }: { item: TimelineItem; isLast: boolean }) {
@@ -40,9 +40,9 @@ function TimelineItemComponent({ item, isLast }: { item: TimelineItem; isLast: b
           <div className={`w-8 h-8 rounded-full flex items-center justify-center ${iconColorClass} relative z-10`}>
             <IconComponent className="w-4 h-4" />
           </div>
-          <div className="absolute top-1/2 left-8 w-4 h-px bg-gray-300 dark:bg-gray-600 transform -translate-y-1/2" />
+          <div className="absolute top-1/2 left-8 w-4 h-px bg-[#e1cabb] dark:bg-gray-600 transform -translate-y-1/2" />
         </div>
-        {!isLast && <div className="absolute top-8 left-1/2 w-px h-full bg-gray-300 dark:bg-gray-600 transform -translate-x-1/2" />}
+        {!isLast && <div className="absolute top-8 left-1/2 w-8px h-full bg-[#e1cabb] dark:bg-gray-600 transform -translate-x-1/2" />}
       </div>
 
       {/* Content */}
@@ -63,7 +63,7 @@ function TimelineItemComponent({ item, isLast }: { item: TimelineItem; isLast: b
             )}
           </div>
         )}
-        {item.location && <p className="text-sm text-amber-900 text-muted-foreground mt-1">@ {item.location}</p>}
+        {item.location && <p className="text-sm text-amber-900 dark:text-amber-200 text-muted-foreground mt-1">@ {item.location}</p>}
       </div>
     </div>
   )
@@ -75,7 +75,7 @@ export function Timeline({ data }: TimelineProps) {
     <div className="max-w-2xl mx-auto p-6">
       <div className="relative">
         {/* Vertical line */}
-        <div className="absolute left-[5rem] top-0 bottom-0 w-px bg-gray-300 dark:bg-gray-600" />
+        <div className="absolute left-[5rem] top-0 bottom-0 w-px  bg-[#e1cabb] dark:bg-[#744040]" />
 
         {data.map((yearData, yearIndex) => (
           <div key={yearData.year} className="relative">
@@ -83,7 +83,7 @@ export function Timeline({ data }: TimelineProps) {
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12"></div> {/* Spacer for date column */}
               <div className="flex-1">
-                <h2 className=" bg-[#e1cabba4] py-2 px-4 rounded-full text-center w-1/2 text-4xl font-bold text-foreground">{yearData.year}</h2>
+                <h2 className=" bg-[#e1cabb] dark:dark:bg-[#744040] py-2 px-4 rounded-full text-center w-1/2 text-4xl font-bold text-foreground">{yearData.year}</h2>
               </div>
             </div>
 

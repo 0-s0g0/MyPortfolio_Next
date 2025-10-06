@@ -11,6 +11,12 @@
     margin:10px;
 }
 
+@media (prefers-color-scheme: dark) {
+    .contentTitle {
+        color: #ffffff; ; /* ダークモードの色 */
+    }
+}
+
 @media (max-width: 1000px){
     .contentTitle{
         font-size:4em;
