@@ -6,10 +6,30 @@
     
 }
 .logo{
-    font-family: 'Zen';
+    float:left ;
+    object-fit: cover;
+    height: 60px;
+}
+.logo2{
+    display:none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .header {
+        background-color: #744040; 
+    }
+    .logo{
+    display:none;
+    }
+    .logo2{
+    display: block;
     float:left ;
     font-size: 2rem;
+    object-fit: cover;
 }
+}
+
+
 .navbar {
     float: right;
     display: flex;
@@ -50,16 +70,28 @@
 .menuIcon {
     color: white;
     float: right;
-    height:50px;
+    height:30px;
     padding: 5px 0;
     /* displayをnoneに指定してください */
     display:none;
   }
   .logoimg{
     height: 50px;
-    width:  230px;
+    width:  150px;
 
   }
+
+  @media (prefers-color-scheme: dark) {
+    .menuIcon {
+         color: #fffefe; ; /* ダークモードの色 */
+    }
+    .headerBIG{
+        color: white;
+    }
+    .headerSMALL{
+        color: white;
+    }
+}
 @media (max-width: 1000px) {
 
     .logo{
@@ -89,7 +121,7 @@
     }
     .logoimg{
         height: 40px;
-        width:  170px;
+        width:  130px;
     
       }
 }

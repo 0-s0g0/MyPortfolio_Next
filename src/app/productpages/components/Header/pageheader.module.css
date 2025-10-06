@@ -14,3 +14,11 @@
     position:fixed;
 }
 
+@media (prefers-color-scheme: dark) {
+    .header  {
+        background: #744040;  
+    }
+    .home{
+    border: solid, #744040;  
+}
+}

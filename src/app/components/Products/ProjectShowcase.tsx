@@ -44,14 +44,14 @@ const ProjectShowcase = () => {
     switch(tag) {
       case 'Web App':
       case 'Website':
-        return 'bg-sky-100 text-sky-700';
+        return 'bg-sky-100 text-sky-700 dark:bg-sky-900 dark:text-sky-100';
       case 'Team Project':
       case 'Individual Project':
-        return 'bg-green-100 text-green-700';
+        return 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-100';
       case 'Award':
-        return 'bg-pink-100 text-pink-700';
+        return 'bg-pink-100 text-pink-700 dark:bg-pink-900 dark:text-pink-100';
       default:
-        return 'bg-gray-100 text-gray-500';
+        return 'bg-gray-100 text-gray-500 dark:bg-gray-600 dark:text-gray-100';
     }
   };
 
@@ -64,8 +64,8 @@ const ProjectShowcase = () => {
             onClick={() => toggleFilter(filter)}
             className={`flex items-center px-4 py-2 rounded-full text-sm font-medium transition-colors ${
               activeFilters.includes(filter)
-                ? 'bg-rose-400 text-white'
-                : 'bg-white text-stone-700 hover:bg-rose-100'
+                ? 'bg-rose-400 text-white dark:bg-rose-900'
+                : 'bg-white text-stone-700 hover:bg-rose-100 dark:hover:bg-rose-600 dark:bg-[#676161] dark:text-white'
             }`}
           >
             {getTagIcon(filter)}
@@ -82,14 +82,14 @@ const ProjectShowcase = () => {
             .map(project => (
             <motion.div
               key={project.id}
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5 }}
             >
               <Link href={`/productpages/${project.id}`}>
-                <div className="h-100 overflow-hidden">
+                <div className="h-100 overflow-hidden ">
                   <Image
                     src={project.image}
                     alt={project.title}
@@ -100,11 +100,11 @@ const ProjectShowcase = () => {
                 </div>
                 <div className="p-6">
                   <div className='flex items-center'>
-                  <h3 className="text-2xl font-medium text-amber-800 mb-2">{project.title}</h3>
-                  <p className="px-5 py-1 bg-gray-100 text-stone-600 rounded-full ml-10">{project.date}</p>
+                  <h3 className="text-2xl font-medium dark:text-white text-amber-800 mb-2">{project.title}</h3>
+                 
                   </div>
-                  <p className="text-stone-600 mb-1">{project.description}</p>
-                  <p className="text-stone-600 mb-4">{project.description2}</p>
+                  <p className="text-stone-600 dark:text-gray-400  mb-1">{project.description}</p>
+                  <p className="text-stone-600 dark:text-gray-400 mb-4">{project.description2}</p>
 
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map(tag => (
@@ -123,13 +123,12 @@ const ProjectShowcase = () => {
                       {project.technologies.map(tech => (
                         <span
                           key={tech}
-                          className="px-2 py-1 bg-stone-100 text-stone-600 rounded text-xs"
+                          className="px-2 py-1 bg-stone-100 text-stone-600 dark:bg-gray-600 dark:text-white rounded text-xs"
                         >
                           {tech}
                         </span>
                       ))}
                     </div>
-
                   </div>
                 </div>
               </Link>
