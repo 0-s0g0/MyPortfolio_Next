@@ -18,6 +18,21 @@ export const timelineData: TimelineYear[] = [
     year: 2025,
     items: [
       {
+        id: "20",
+        icon: "award",
+        date: "09",
+        title: "JunctionXKyutechでSecondPrize賞受賞",
+        description: "受賞プロダクト：BreathVizzAI",
+        url: "https://0-s0g0.com/productpages/1",
+      },
+      {
+        id: "19",
+        icon: "building",
+        date: "09",
+        title: "N様サマーインターン参加",
+        description: "5days8人チーム要件定義書類の作成と発表",
+      },
+      {
         id: "18",
         icon: "award",
         date: "09",
@@ -30,8 +45,8 @@ export const timelineData: TimelineYear[] = [
         id: "17",
         icon: "building",
         date: "09",
-        title: "SmartHR様サマーインターン参加",
-        description: "4daysチーム開発",
+        title: "S様サマーインターン参加",
+        description: "4days5人チーム開発",
       },
       {
         id: "16",
@@ -44,7 +59,7 @@ export const timelineData: TimelineYear[] = [
         id: "14",
         icon: "building",
         date: "08",
-        title: "株式会社CARTAHOLDINGS様サマーインターン「Treasure」参加",
+        title: "株式会社C様サマーインターン「Treasure」参加",
         description: "3weeksフルサイクル開発",
         url: "https://0-s0g0.com/productpages/11",
       },
