@@ -53,7 +53,7 @@ function ContactModal() {
                         </Link>
                     </div>
                     <p className={styles.modalDescription}>Connections create possibilities</p>
-                    <button className={styles.closeButton} onClick={closeModal}>Close</button>
+                    <button className={styles.closeButton} onClick={closeModal}>Go to website</button>
                 </div>
             </div>
         </div>

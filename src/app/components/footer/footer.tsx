@@ -1,5 +1,6 @@
-import Link from 'next/link';
+"use client";
 
+import Link from 'next/link';
 import fotterstyles from './footer.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGithub, faInstagram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
