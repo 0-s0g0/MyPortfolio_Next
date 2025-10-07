@@ -86,6 +86,10 @@
     background: #e1cabba4;
 }
 
+.modalDescription{
+    font-family:serif;
+}
+
 .modalContent button {
     padding: 10px 20px;
     border: none;
@@ -95,8 +99,38 @@
     cursor: pointer;
     font-size: 1rem;
     margin-top:30px;
+    font-family:serif;
 }
 
 .modalContent button:hover {
     background-color: #005bb5;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .modalcovertopImage{
+       background-color: #744040;  
+    }
+    .modalcoverImage{
+       background-color: #705e5e9a;  
+    }
+    .modalContent {
+        background-image:url('./../../Public/images/modalback2.png');
+    }
+
+    .icon{
+        background: #ffffff; 
+        color: black; 
+    }
+    .modalContent button {
+        background: #744040;  
+    }
+    .modalname{
+        border-bottom: dotted 2px #fffdfd;  
+    }
+    .modalContent button:hover {
+        background-color: #af7d76;
+    }
+
+
 }
