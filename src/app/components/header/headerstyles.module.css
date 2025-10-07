@@ -72,9 +72,9 @@
     float: right;
     height:30px;
     padding: 5px 0;
-    /* displayをnoneに指定してください */
     display:none;
   }
+  
   .logoimg{
     height: 50px;
     width:  150px;
@@ -83,7 +83,7 @@
 
   @media (prefers-color-scheme: dark) {
     .menuIcon {
-         color: #fffefe; ; /* ダークモードの色 */
+         color: #fffefe; ;
     }
     .headerBIG{
         color: white;
