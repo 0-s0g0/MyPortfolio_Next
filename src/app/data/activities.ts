@@ -18,6 +18,37 @@ export const timelineData: TimelineYear[] = [
     year: 2025,
     items: [
       {
+        id: "24",
+        icon: "MonitorCheck",
+        date: "11",
+        title: "チャレキャラ2025最終発表参加",
+        description: "TSUNAGULINK",
+      },
+      {
+        id: "23",
+        icon: "award",
+        date: "11",
+        title: "技育展2025優勝&ウィングアーク1st賞受賞",
+        description: "受賞プロダクト：BreathVizAI",
+        url: "https://0-s0g0.com/productpages/13",
+        location: "TOKYO NODE/東京",
+      },
+      {
+        id: "22",
+        icon: "MonitorCheck",
+        date: "11",
+        title: "国際会議ICCAS2025登壇",
+        description: "Medical Image Processing",
+        location: "韓国/仁川",
+      },
+            {
+        id: "21",
+        icon: "award",
+        date: "10",
+        title: "ハックツハッカソン~ウイングアーク1st x ギラヴァンツ北九州編~最優秀賞受賞",
+        description: "受賞プロダクト：TellStecker2025",
+      },
+      {
         id: "20",
         icon: "award",
         date: "09",
