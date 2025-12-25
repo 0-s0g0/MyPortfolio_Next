@@ -128,7 +128,7 @@ export interface Project {
   },
   {
     id: 5,
-    title: "DreamShere",
+    title: "DreamShare",
     description: "学生と企業が夢でつながるマッチングアプリ",
     image: product5img,
     awardTitle: ["none"],
