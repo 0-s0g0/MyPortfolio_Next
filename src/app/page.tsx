@@ -18,7 +18,7 @@ export default function Home() {
     <Header/>
     <Title/>
     <div className="flex flex-col justify-center items-center">
-      <div id="products" className={styles.contentTitle}>Cording Products</div>
+      <div id="products" className={styles.contentTitle}>Coding Products</div>
       <ProjectShowcase/>
       <div id="products" className={styles.contentTitle}>Only Designs</div>
       <DesignSlider/>
