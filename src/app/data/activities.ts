@@ -23,6 +23,7 @@ export const timelineData: TimelineYear[] = [
         date: "11",
         title: "チャレキャラ2025最終発表参加",
         description: "TSUNAGULINK",
+        url: "https://0-s0g0.com/productpages/15",
       },
       {
         id: "23",
@@ -46,7 +47,8 @@ export const timelineData: TimelineYear[] = [
         icon: "award",
         date: "10",
         title: "ハックツハッカソン~ウイングアーク1st x ギラヴァンツ北九州編~最優秀賞受賞",
-        description: "受賞プロダクト：TellStecker2025",
+        description: "受賞プロダクト：YellStriker2025",
+        url: "https://0-s0g0.com/productpages/14",
       },
       {
         id: "20",
@@ -211,7 +213,7 @@ export const timelineData: TimelineYear[] = [
         id: "2",
         icon: "award",
         date: "11",
-        title: "KCL☆HAck2024で金賞受賞",
+        title: "KCL☆Hack2024で金賞受賞",
         description: "受賞プロダクト：たまlog",
         url: "https://0-s0g0.com/productpages/1",
         location: "九州工業大学",
