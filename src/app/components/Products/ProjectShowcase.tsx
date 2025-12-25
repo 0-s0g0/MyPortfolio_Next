@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 const ProjectShowcase = () => {
   return (
-    <section className="py-16">
+    <section className="md:py-16 py-0">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 m-8">
         <AnimatePresence>
           {projects
@@ -16,7 +16,7 @@ const ProjectShowcase = () => {
             .map(project => (
             <motion.div
               key={project.id}
-              className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+              className=" dark:bg-slate-800 rounded-lg overflow-hidden  hover:shadow-lg transition-shadow duration-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}

@@ -9,7 +9,7 @@ export default function Title() {
             <div className={titlestyles.title}>
                 <div  className={titlestyles.titleText}>
                     <div className={titlestyles.titleTexth1}>MyPortfolio</div>
-                    <div className={titlestyles.titleTexth4}>-SogoRei Cording Products-</div>
+                    <div className={titlestyles.titleTexth4}>- SogoRei's Products -</div>
                 </div>
                 <Image src={titleGirl} alt="" className={titlestyles.titleimg}></Image>
             </div>

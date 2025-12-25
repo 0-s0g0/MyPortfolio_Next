@@ -20,7 +20,7 @@ export default function Fotter() {
                     <div className={fotterstyles.footerbox}>
                         <div className={fotterstyles.footerSubtext}>
                             <div className={fotterstyles.footertext2}>MyPortfolio</div>
-                            <div className={fotterstyles.footertext3}>-SogoRei Cording Products-</div>
+                            <div className={fotterstyles.footertext3}>-SogoRei's Products-</div>
                         </div>
 
                         <div className={fotterstyles.footermain2}>

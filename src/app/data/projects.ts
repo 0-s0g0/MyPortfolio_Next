@@ -59,7 +59,7 @@ export interface Project {
     outname:'none',
     outlink:'none',
     webURL: "https://tamalog.vercel.app/",
-    date:'2024.9',
+    date:'2024.11',
 },
 {
     id: 2,
