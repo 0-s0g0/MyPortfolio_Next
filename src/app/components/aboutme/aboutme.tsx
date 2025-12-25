@@ -26,15 +26,6 @@ export default function Aboutme() {
                     <div className={aboutmestyles.aboutmetexttag}>
                     北九州のITコミュニティ<Link href="https://stepbycode.work/">「StepByCode」</Link>の代表を務めており、皆さんと一緒に学ぶ時間も、私の大切な活動です。
                     </div>
-                    <div className="flex my-2">
-                        直近の活動まとめ
-                        <a
-                            href={'./Activites'}
-                            className="flex-shrink-0 transition-colors"
-                        >
-                            <ExternalLink className="w-5 h-5 ml-2" />
-                        </a>
-                    </div>
                     <div className={aboutmestyles.aboutmeicons}>
 
                         <Link href="https://www.instagram.com/0_s0g0" >
