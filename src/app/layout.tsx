@@ -3,6 +3,7 @@ import {Zen_Maru_Gothic } from "next/font/google";
 import "./globals.css";
 import ContactModal from "./components/contactModal/contactModal";
 import Head from "next/head";  // Importing Head here
+import LoadingScreen from "./components/Loading/LoadingScreen";
 
 
 const ZenMaru = Zen_Maru_Gothic({
@@ -25,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <Head>
         <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body
         className={ZenMaru.className}
       >
+        <LoadingScreen />
         {children}
         <ContactModal/>
       </body>

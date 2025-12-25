@@ -27,8 +27,6 @@ export default function Home() {
     
     <div id="about-me" className={styles.contentTitle}>About me</div>
       <Aboutme/>
-    <div id="about-me" className={styles.contentTitle}>Activites</div>
-      <Timeline data={timelineData} />
 
     <div id="concept" className={styles.contentTitle}>Concept</div>
       <Concept/>

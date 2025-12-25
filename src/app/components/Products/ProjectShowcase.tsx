@@ -16,7 +16,7 @@ const ProjectShowcase = () => {
             .map(project => (
             <motion.div
               key={project.id}
-              className=" dark:bg-slate-800 rounded-lg overflow-hidden  hover:shadow-lg transition-shadow duration-300"
+              className=" rounded-lg overflow-hidden  hover:shadow-lg transition-shadow duration-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
