@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <PageHeader />
-        <div className="container mx-auto py-12">
+        <div className="container mx-auto md:py-12 ">
           <div className="text-center mb-12">
            <div id="products" className={styles.contentTitle}>My Activites</div>
           </div>

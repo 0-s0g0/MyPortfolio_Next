@@ -80,7 +80,7 @@ export default function TechLoadingScreen({ onComplete }: TechCircularLoadingPro
 
           {/* 中央：ステータス表示 */}
           <div className="absolute inset-0 flex flex-col items-center justify-center font-mono">
-            <span className="text-[10px] opacity-50 text-[#744040] dark:text-[#e1cabb] mb-1 uppercase tracking-tighter">BitDepth</span>
+            <span className="text-[10px] opacity-50 text-[#744040] dark:text-[#e1cabb] mb-1 uppercase tracking-tighter">Loading</span>
             <div className="text-4xl font-black text-[#744040] dark:text-[#e1cabb]">
               {percentage}
             </div>
@@ -93,7 +93,7 @@ export default function TechLoadingScreen({ onComplete }: TechCircularLoadingPro
         {/* テクニカルラベル */}
         <div className="text-center font-mono">
         <p className="text-xs tracking-[0.3em] text-[#744040] dark:text-[#e1cabb] uppercase font-bold">
-        {percentage < 50 ? "Scanning_Sogorei_Archive" : "Building_The_World"}
+        {percentage < 50 ? "Scanning_Sogorei_Archive" : "Building_Portfolio"}
         </p>
           <div className="mt-4 flex justify-center gap-1.5">
              {[0, 1, 2].map((i) => (
