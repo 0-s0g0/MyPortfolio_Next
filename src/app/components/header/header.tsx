@@ -21,6 +21,9 @@ export default function Header() {
     const openModal = () => {
         router.push("?modal=contact", { scroll: false });
     };
+    const openPage = () => {
+        router.push("/Activites", { scroll: false });
+    };
 
     return (
         <div className={headertyles.header}>
@@ -48,10 +51,15 @@ export default function Header() {
                     <div className={headertyles.headerBIG}>Products</div>
                     <div className={headertyles.headerSMALL}>作品紹介</div>
                 </ScrollLink>
+                <button onClick={openPage}>
+                    <div className={headertyles.headerBIG}>Activites</div>
+                    <div className={headertyles.headerSMALL}>活動・実績</div>
+                </button>
                 <button onClick={openModal}>
                     <div className={headertyles.headerBIG}>Contact</div>
                     <div className={headertyles.headerSMALL}>お問い合わせ</div>
                 </button>
+                
             </div>
         </div>
     );

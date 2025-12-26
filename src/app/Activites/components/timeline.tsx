@@ -31,7 +31,7 @@ function TimelineItemComponent({ item, isLast }: { item: TimelineItem; isLast: b
     <div className="relative flex items-start gap-4 pb-8">
       {/* Date */}
       <div className="flex-shrink-0 w-12 text-right">
-        <span className="text-base text-muted-foreground font-mono">{item.date}</span>
+        <span className="text-sm md:text-base text-muted-foreground font-mono">{item.date}</span>
       </div>
 
       {/* Icon */}
@@ -47,10 +47,10 @@ function TimelineItemComponent({ item, isLast }: { item: TimelineItem; isLast: b
 
       {/* Content */}
       <div className="flex-1 min-w-0">
-        <h3 className="text-xl font-medium text-foreground leading-relaxed">{item.title}</h3>
+        <h3 className="text-sm md:text-xl font-medium text-foreground leading-relaxed">{item.title}</h3>
         {item.description && (
           <div className="flex items-center gap-2 mt-1">
-            <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+            <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{item.description}</p>
             {item.url && (
               <a
                 href={item.url}
@@ -72,10 +72,10 @@ function TimelineItemComponent({ item, isLast }: { item: TimelineItem; isLast: b
 export function Timeline({ data }: TimelineProps) {
 
   return (
-    <div className="max-w-2xl mx-auto p-6">
+    <div className="max-w-2xl mx-auto p-1 md:p-6">
       <div className="relative">
         {/* Vertical line */}
-        <div className="absolute left-[5rem] top-0 bottom-0 w-px  bg-[#e1cabb] dark:bg-[#744040]" />
+        <div className="absolute  left-[5rem] top-0 bottom-0 w-px  bg-[#e1cabb] dark:bg-[#744040]" />
 
         {data.map((yearData, yearIndex) => (
           <div key={yearData.year} className="relative">
@@ -83,7 +83,7 @@ export function Timeline({ data }: TimelineProps) {
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12"></div> {/* Spacer for date column */}
               <div className="flex-1">
-                <h2 className=" bg-[#e1cabb] dark:dark:bg-[#744040] py-2 px-4 rounded-full text-center w-1/2 text-4xl font-bold text-foreground">{yearData.year}</h2>
+                <h2 className=" bg-[#e1cabb] dark:dark:bg-[#744040] py-2 px-4 rounded-full text-center w-1/2 text-xl md:text-4xl font-bold text-foreground">{yearData.year}</h2>
               </div>
             </div>
 
