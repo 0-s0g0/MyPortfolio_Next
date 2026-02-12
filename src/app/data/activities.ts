@@ -14,16 +14,63 @@ export interface TimelineYear {
 }
 
 export const timelineData: TimelineYear[] = [
+    {
+    year: 2026,
+    items: [
+
+      {
+        id: "4",
+        icon: "award",
+        date: "02",
+        title: "福岡未来ITスタートアップアワード理事長賞受賞",
+        description: "受賞プロダクト：BreathVizAI",
+        url: "https://0-s0g0.com/productpages/13",
+        location: "ONE FUKUOKA BLDG./福岡",
+      },
+      {
+        id: "3",
+        icon: "MonitorSmartphone",
+        date: "01",
+        title: "BreathVizAIサイト制作",
+        description: "HP公開中",
+        url: "https://hp.breathvizai.com/",
+      },
+      {
+        id: "2",
+        icon: "MonitorCheck",
+        date: "01",
+        title: "NYCU innoBridge Parks Taiwan Program参加",
+        description: "5days R&D business program & Pitch",
+        location: "TaiwanTechArea/台湾",
+      },
+      {
+        id: "1",
+        icon: "MonitorCheck",
+        date: "01",
+        title: "九工大PreGapファウンド事業助成金精度採択",
+        description: "事業内容：呼吸器音解析AIプラットフォーム開発",
+      },
+    ],
+  },
   {
     year: 2025,
     items: [
       {
-        id: "24",
+        id: "25",
         icon: "MonitorCheck",
         date: "11",
         title: "チャレキャラ2025最終発表参加",
-        description: "TSUNAGULINK",
+        description: "発表作品：TSUNAGULINK",
         url: "https://0-s0g0.com/productpages/15",
+      },
+      {
+        id: "24",
+        icon: "MonitorCheck",
+        date: "12",
+        title: "ROCKET PITCH NIGHT FUKUOKA 2025 に登壇",
+        description: "発表作品：BreathVizAI",
+        url: "https://0-s0g0.com/productpages/13",
+        location: "ONE FUKUOKA BLDG./福岡",
       },
       {
         id: "23",
@@ -39,7 +86,7 @@ export const timelineData: TimelineYear[] = [
         icon: "MonitorCheck",
         date: "11",
         title: "国際会議ICCAS2025登壇",
-        description: "Medical Image Processing",
+        description: "発表研究：Medical Image Processing",
         location: "韓国/仁川",
       },
             {

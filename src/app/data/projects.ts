@@ -15,6 +15,7 @@ import product12img from "./../Public/images/CatchUP.png"
 import product13img from "./../Public/images/BreathVizAI.png"
 import product14img from "./../Public/images/YellStriker.png"
 import product15img from "./../Public/images/TsunaguLink.png"
+import product16img from "./../Public/images/BreathVizAI-HP.png"
 
 export interface Project {
     id: number;
@@ -47,7 +48,7 @@ export interface Project {
     image: product1img,
     tag: "Web App",
     technologies: ["Next.js/TS", "JavaScript", "docker","CSS", "Python/Flask"],
-    awardTitle: ["KCL☆Hack (2024/11) 金賞&技育博vol4(2025/09)企業賞"],
+    awardTitle: ["KCL☆Hack (2024/11) 金賞", "技育博vol4(2025/09)企業賞"],
     github: "https://github.com/0-s0g0/KCLHack",
     background :"痩せたいけど、毎回手入力するのはめんどくさい。  \n大学にある体組成計の記録用紙を自動入力かつキャラクター要素で継続を！",
     purpose:"webアプリを初めて作ってみる。画像処理を取り入れてみたい。  \n大学にある体組成計の記録用紙をデジタル化してみる",
@@ -327,7 +328,7 @@ export interface Project {
     image: product13img,
     tag: "Web App",
     technologies: ["Next.js/TS", "Vercel", "docker","CSS", "Python/Pytorch","FastAPI","GCP"],
-    awardTitle: ["技育展優勝&企業賞","JunctionX kyutech(2025/09)Second Prize"],
+    awardTitle: ["技育展2025優勝", "技育展2025ウイングアーク1st賞", "JunctionX kyutech(2025/09)Second Prize", "福岡未来ITスタートアップアワード理事長賞"],
     github: "非公開",
     background :"研究の実用化をしてみたい。論文だけで終わらせない私たちの技術が届くように",
     purpose:"呼吸器音の自動分類の研究を実用化する",
@@ -368,7 +369,8 @@ export interface Project {
     description: "起業家高校生のためのデジタル名刺",
     image: product15img,
     tag: "Web App",
-    technologies: ["Next.js/TS", "Vercel", "docker","CSS", "Python/Pytorch","FastAPI","GCP"],
+    technologies: ["Next.js/TS", "Vercel", "docker","CSS", "Go"
+    ],
     awardTitle: ["JunctionX kyutech(2025/09)Second Prize"],
     github: "非公開",
     background :"起業家高校生のための電子名刺アプリを作成したい",
@@ -382,6 +384,27 @@ export interface Project {
     outlink:"none",
     webURL: 'https://tsunagulink.0-s0g0.com/',
     date:'2025.12',
+  },
+       {
+    id: 16,
+    title: "BreathVizAI HP",
+    description: "呼吸器音診断支援アプリ公式サイト",
+    image: product16img,
+    tag: "Web Site",
+    technologies: ["Next.js/TS", "Vercel","CSS", ],
+    awardTitle: ["JunctionX kyutech(2025/09)Second Prize"],
+    github: "非公開",
+    background :"呼吸器音診断支援アプリ公式サイトを作成したい",
+    purpose:"事業化するために活動履歴やお問い合わせなのどをまとめた公式サイトの作成",
+    function:"プロダクト紹介サイト ",
+    number:'１名',
+    role: "すべて",
+    prezentation:'2026/1/31',
+    duration: "2025/1/10～2026/1/31",
+    outname:"none",
+    outlink:"none",
+    webURL: 'https://hp.breathviz-ai.com/',
+    date:'2026.01',
   },
 
 

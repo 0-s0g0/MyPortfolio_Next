@@ -61,6 +61,30 @@ const ProjectDetail8 = () => {
               <th>使用技術</th>
               <td>{project.technologies.join(", ")}</td>
             </tr>
+            {project.awardTitle && project.awardTitle[0] !== 'none' ? (
+              <tr className={pagestyles.tableRow}>
+                <th>受賞</th>
+                <td>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                    {project.awardTitle.map((award, index) => (
+                      <span
+                        key={index}
+                        style={{
+                          backgroundColor: '#f59e0b',
+                          color: 'white',
+                          padding: '4px 12px',
+                          borderRadius: '16px',
+                          fontSize: '14px',
+                          fontWeight: '500',
+                        }}
+                      >
+                        {award}
+                      </span>
+                    ))}
+                  </div>
+                </td>
+              </tr>
+            ) : null}
             {project.prezentation && project.prezentation !== 'none' ? (
               <tr className={pagestyles.tableRow}>
                 <th>発表プロダクト</th>
