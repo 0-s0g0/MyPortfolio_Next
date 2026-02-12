@@ -1,15 +1,26 @@
+'use client';
 import Image from "next/image";
 import Link from 'next/link';
 
 import aboutmeGirl from "./../../Public/images/Me.png"
 import aboutmestyles from './aboutme.module.css'
-
+import { timelineData } from './../../data/activities';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGithub, faInstagram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
-import { ExternalLink } from "lucide-react"
+import { ExternalLink, Award } from "lucide-react"
 
 export default function Aboutme() {
+    // activityからawardのみを抽出（全件）
+    const awards = timelineData
+        .flatMap(yearData =>
+            yearData.items
+                .filter(item => item.icon === "award")
+                .map(item => ({
+                    ...item,
+                    year: yearData.year
+                }))
+        );
 
     return (
         <div  className={aboutmestyles.aboutmeback}>
@@ -26,6 +37,27 @@ export default function Aboutme() {
                     <div className={aboutmestyles.aboutmetexttag}>
                     北九州のITコミュニティ<Link href="https://stepbycode.work/">「StepByCode」</Link>の代表を務めており、皆さんと一緒に学ぶ時間も、私の大切な活動です。
                     </div>
+
+                    {/* Awards Section */}
+                    <div className="mt-6 mb-4">
+                        <div className="flex items-center gap-2 mb-3">
+                            <Award className="w-5 h-5 text-amber-700 dark:text-amber-400" />
+                            <span className="font-semibold text-sm text-amber-900 dark:text-amber-300">受賞歴</span>
+                        </div>
+                        <div className="border-l-2 border-amber-300 dark:border-amber-600 pl-4">
+                            {awards.map((award) => (
+                                <div
+                                    key={award.id}
+                                    className="text-xs text-gray-700 dark:text-gray-300 py-1"
+                                >
+                                    <div className="font-medium">
+                                        <span className="text-amber-700 dark:text-amber-400">{award.year}.{award.date}</span> {award.title}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
                     <div className="flex my-2">
                         直近の活動まとめ
                         <a
@@ -51,8 +83,8 @@ export default function Aboutme() {
                         </Link>
                     </div>
                 </div>
-                
-                
+
+
             </div>
         </div>
       )

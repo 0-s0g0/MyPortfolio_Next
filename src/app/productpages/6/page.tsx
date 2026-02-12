@@ -61,23 +61,9 @@ const ProjectDetail6 = () => {
               <tr className={pagestyles.tableRow}>
                 <th>受賞</th>
                 <td>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                    {project.awardTitle.map((award, index) => (
-                      <span
-                        key={index}
-                        style={{
-                          backgroundColor: '#f59e0b',
-                          color: 'white',
-                          padding: '4px 12px',
-                          borderRadius: '16px',
-                          fontSize: '14px',
-                          fontWeight: '500',
-                        }}
-                      >
-                        {award}
-                      </span>
-                    ))}
-                  </div>
+                  {project.awardTitle.map((award, index) => (
+                    <div key={index}>{award}</div>
+                  ))}
                 </td>
               </tr>
             ) : null}

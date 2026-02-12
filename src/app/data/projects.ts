@@ -371,7 +371,7 @@ export interface Project {
     tag: "Web App",
     technologies: ["Next.js/TS", "Vercel", "docker","CSS", "Go"
     ],
-    awardTitle: ["JunctionX kyutech(2025/09)Second Prize"],
+    awardTitle: ["none"],
     github: "非公開",
     background :"起業家高校生のための電子名刺アプリを作成したい",
     purpose:"NFCで教諭できるポートフォリオの作成",
