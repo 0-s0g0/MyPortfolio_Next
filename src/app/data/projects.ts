@@ -403,7 +403,7 @@ export interface Project {
     duration: "2025/1/10～2026/1/31",
     outname:"none",
     outlink:"none",
-    webURL: 'https://hp.breathviz-ai.com/',
+    webURL: 'https://hp.breathvizai.com/',
     date:'2026.01',
   },
 
