@@ -42,7 +42,7 @@ export const DesignSlider = () => {
   const tripledSecondHalf = [...secondHalf, ...secondHalf, ...secondHalf];
 
   return (
-    <div className="bg-white dark:bg-gray-900 py-10">
+    <div className="bg-white dark:bg-gray-900 py-10 w-full max-w-full overflow-x-hidden">
       {/* PC版: 1段で横スクロール */}
       <div className="hidden md:block overflow-hidden whitespace-nowrap">
         <motion.div
