@@ -9,8 +9,22 @@ interface TechCircularLoadingProps {
 export default function TechLoadingScreen({ onComplete }: TechCircularLoadingProps) {
   const [percentage, setPercentage] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
+  const [shouldShow, setShouldShow] = useState(false);
+
+  // 初回アクセスチェック
+  useEffect(() => {
+    const hasVisited = sessionStorage.getItem('hasVisited');
+    if (!hasVisited) {
+      setShouldShow(true);
+      sessionStorage.setItem('hasVisited', 'true');
+    } else {
+      setIsComplete(true);
+      onComplete?.();
+    }
+  }, [onComplete]);
 
   useEffect(() => {
+    if (!shouldShow) return;
     const duration = 3000;
     const steps = 100;
     const interval = duration / steps;
@@ -42,6 +56,8 @@ export default function TechLoadingScreen({ onComplete }: TechCircularLoadingPro
   const normalizedRadius = radius - strokeWidth / 2;
   const circumference = normalizedRadius * 2 * Math.PI;
   const strokeDashoffset = circumference - (percentage / 100) * circumference;
+
+  if (!shouldShow) return null;
 
   return (
     <div
