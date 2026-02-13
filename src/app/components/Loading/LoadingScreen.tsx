@@ -49,7 +49,7 @@ export default function TechLoadingScreen({ onComplete }: TechCircularLoadingPro
     }, interval);
 
     return () => clearInterval(timer);
-  }, [onComplete]);
+  }, [onComplete, shouldShow]);
 
   const radius = 90;
   const strokeWidth = 4;
