@@ -222,7 +222,7 @@ export interface Project {
     tag: "Web Site",
     technologies: ["cloudflare", "Next.js/TS","CSS"],
     awardTitle: ["none"],
-    github: "https://github.com/Yiwashi/kitaQdenkiHP",
+    github: "非公開",
     background: "北九州市の電気工事会社「有限会社北九電機」様の公式サイトを制作。  \n高い技術力と豊富な実績をWebで伝え、新たな顧客層にアプローチするデジタル拠点として開発しました。",
     purpose: "。  \n事業内容や技術力を分かりやすく提示し、ビジネスチャンスの創出と問い合わせ増加を目指します。",
     function: "事業内容、会社概要、採用情報、お問い合わせフォームといった、企業の公式サイトに不可欠な機能を実装。  \n顧客が必要な情報にスムーズにアクセスできるよう設計し、レスポンシブデザインにも対応しています。",
@@ -232,7 +232,7 @@ export interface Project {
     duration: "2025/3/38～2025/6/8(公開)",
     outname:"none",
     outlink:"none",
-    webURL: 'https://kitakyudenki.vercel.app/',
+    webURL: 'https://kitakyudenki.com/',
     date:'2025.06',
   },
   {
