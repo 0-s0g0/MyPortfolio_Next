@@ -1,6 +1,10 @@
 'use client';
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+
+// ページ遷移やStrictModeの再実行でも二重に判定しないためのフラグ
+let hasChecked = false;
 
 interface TechCircularLoadingProps {
   onComplete?: () => void;
@@ -11,17 +15,28 @@ export default function TechLoadingScreen({ onComplete }: TechCircularLoadingPro
   const [isComplete, setIsComplete] = useState(false);
   const [shouldShow, setShouldShow] = useState(false);
 
-  // 初回アクセスチェック
+  const pathname = usePathname();
+
+  // 初回アクセスチェック（トップページへの最初のアクセス時のみ表示）
   useEffect(() => {
-    const hasVisited = sessionStorage.getItem('hasVisited');
-    if (!hasVisited) {
-      setShouldShow(true);
+    if (hasChecked) return;
+    hasChecked = true;
+
+    let hasVisited = false;
+    try {
+      hasVisited = sessionStorage.getItem('hasVisited') === 'true';
       sessionStorage.setItem('hasVisited', 'true');
+    } catch {
+      // ストレージが使えない環境ではこのページ読み込み中だけ判定する
+    }
+
+    if (!hasVisited && pathname === '/') {
+      setShouldShow(true);
     } else {
       setIsComplete(true);
       onComplete?.();
     }
-  }, [onComplete]);
+  }, [onComplete, pathname]);
 
   useEffect(() => {
     if (!shouldShow) return;
