@@ -28,7 +28,7 @@ export default function Aboutme() {
                 <Image src={aboutmeGirl} alt="" className={aboutmestyles.aboutmeimg}></Image>
                 <div  className={aboutmestyles.aboutmetext}>
                     <div className={aboutmestyles.aboutmetextName}>Sogo Rei</div>
-                    <div className={aboutmestyles.aboutmetextSub}>Kyutechの大学院生です（修士1年 / 27卒）</div>
+                    <div className={aboutmestyles.aboutmetextSub}>Kyutechの大学院生です（修士2年 / 27卒）</div>
                     <div className={aboutmestyles.aboutmetextMain}>
                     大学院では医用画像処理について研究しながら、アイデアをWebサイトやアプリとして形にする面白さに夢中です。
                     <br />
